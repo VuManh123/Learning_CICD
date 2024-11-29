@@ -16,6 +16,7 @@ function authen(req, res, next) {
     next();
   } catch (err) {
     res.status(400).send(JSON.stringify(err));
+    console.log('Error Action');
   }
 }
 
